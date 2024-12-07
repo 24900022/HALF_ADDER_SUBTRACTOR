@@ -56,7 +56,7 @@ Developed by:Priyanka S
 
 RegisterNumber:24900022
 
-module ha(a,b,sum,carry);
+module Halfadd(a,b,sum,carry);
 
 input a,b;
 
@@ -68,7 +68,7 @@ assign carry= ( a & b);
 
 endmodule
 
-module hs(a,b,difference,borrow);
+module Halfsub(a,b,difference,borrow);
 
 input a,b;
 
