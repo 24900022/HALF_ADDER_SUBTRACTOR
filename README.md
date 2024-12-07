@@ -56,6 +56,31 @@ Developed by:Priyanka S
 
 RegisterNumber:24900022
 
+module ha(a,b,sum,carry);
+
+input a,b;
+
+output sum,carry;
+
+assign sum= (a ^ b);
+
+assign carry= ( a & b);
+
+endmodule
+
+module hs(a,b,difference,borrow);
+
+input a,b;
+
+output difference,borrow;
+
+assign difference= (a ^ b);
+
+assign borrow= ( ~a & b);
+
+endmodule
+
+
 **RTL Schematic**
 
 ![Screenshot 2024-12-07 180015](https://github.com/user-attachments/assets/3dcdc462-05ff-4dc7-9db4-7c5c1b16782f)
